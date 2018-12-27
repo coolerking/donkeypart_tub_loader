@@ -1,6 +1,6 @@
 # Donkeypart Tub Loader
 
-Donkey Carをrecordモードで運転すると、Tubディレクトリ上に
+[Donkey Car](https://www.donkeycar.com/) をrecordモードで運転すると、Tubディレクトリ上に
 JSONファイルおよびJPG型式のイメージファイルが格納される。
 
 このTubディレクトリ上のすべてのデータを連番の昇順に1件づつ読み込み、
@@ -12,6 +12,11 @@ Vehicleフレームワークが管理しているメモリ上に展開するパ�
    ```bash
    git clone https://github.com/coolerking/donkeypart_tub_loader.git
    pip install -e ./donkeypart_tub_loader
+   
+   ## for test
+   cd donkeypart_tub_loader/tests
+   pytest test.py
+   cd ..
    ```
 2. `~/mycar/manage.py` を編集
    ```python
@@ -41,9 +46,11 @@ Vehicleフレームワークが管理しているメモリ上に展開するパ�
     V.start(rate_hz=cfg.DRIVE_LOOP_HZ,
             max_loop_count=cfg.MAX_LOOPS)
     :
-    '''
+    ```
 
 > デフォルトTubディレクトリパス(`~/mycar/tub`)以外を指定したい場合は、`cfg.TUB_PATH`を修正する。
+
+`manage.py` 記述例として [`tests/test.py`](./tests/test.py) を参照のこと。
 
 # 実行
 

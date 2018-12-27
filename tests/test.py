@@ -2,11 +2,12 @@
 """
 テストクラス、正常終了の場合はTubディレクトリ上のデータを標準出力に表示する。
 
-Usage:
-    python test.py
+git clone https://github.com/coolerking/donkeypart_tub_loader.git
+pip install -e ./donkeypart_tub_loader
+pip install pytest
+cd donkeypart_tub_loader/tests
+pytest test.py
 
-Options:
-    なし
 """
 import pytest
 
