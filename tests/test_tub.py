@@ -6,8 +6,11 @@ git clone https://github.com/coolerking/donkeypart_tub_loader.git
 pip install -e ./donkeypart_tub_loader
 pip install pytest
 cd donkeypart_tub_loader/tests
-pytest test.py
+pytest test_tub.py
 
+CSVデータを表示させるには、pytestではなく通常の実行を行う必要がある。
+
+python test_tub.py
 """
 import pytest
 

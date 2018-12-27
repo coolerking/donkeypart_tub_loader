@@ -15,12 +15,12 @@ Vehicleフレームワークが管理しているメモリ上に展開するパ�
    
    ## for test
    cd donkeypart_tub_loader/tests
-   pytest test.py
+   pytest
    cd ..
    ```
 2. `~/mycar/manage.py` を編集
    ```python
-
+    :
     V = dk.vehicle.Vehicle()
     :
 
@@ -50,7 +50,7 @@ Vehicleフレームワークが管理しているメモリ上に展開するパ�
 
 > デフォルトTubディレクトリパス(`~/mycar/tub`)以外を指定したい場合は、`cfg.TUB_PATH`を修正する。
 
-`manage.py` 記述例として [`tests/test.py`](./tests/test.py) を参照のこと。
+`manage.py` 記述例として [`tests/test.py`](./tests/test_tub.py) を参照のこと。
 
 # 実行
 
