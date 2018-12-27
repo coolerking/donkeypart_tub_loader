@@ -1,0 +1,5 @@
+.git
+__pycache__/
+donkeypart_tub_loader.egg-info/
+build/
+dist/
