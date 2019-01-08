@@ -55,6 +55,9 @@ class TubLoader:
             return i, user_mode, user_angle, user_throttle, pilot_angle, pilot_throttle, angle, throttle
         else:
             raise StopIteration()
+    
+    def shutdown(self):
+        pass
 
 class TubPrinter:
     """
@@ -95,5 +98,6 @@ class TubPrinter:
         ))
         self.index += 1
 
-
+    def shutdown(self):
+        pass
         
