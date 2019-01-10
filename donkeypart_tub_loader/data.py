@@ -10,7 +10,6 @@ from datetime import datetime
 
 import donkeycar as dk
 
-
 class Tubs:
     """
     1つのインスタンスで1つのTubデータディレクトリをあらわすクラス。
@@ -130,7 +129,7 @@ class TubRecord(Tub):
                 self.record['pilot/throttle'] = 0.5
             else:
                 self.record['pilot/throttle'] = 0.0
-        
+
         if self.record['user/mode'] == 'user':
             if 'angle' not in self.record:
                 self.record['angle'] = self.record['user/angle']
